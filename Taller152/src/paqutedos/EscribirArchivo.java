@@ -14,37 +14,15 @@ import java.util.Scanner;
  * @author reroes
  */
 public class EscribirArchivo {
-    public static void ejercicio() throws FileNotFoundException {
-        
-        Formatter mensaje = null;
-        
-            mensaje = new Formatter("data/archivo2.txt");
-            Scanner entrada = new Scanner(System.in);
-            boolean bandera = true;
-            while (bandera = true){
-                String ruta = "/data/archivo2.txt";
-                String nombre;
-                double presupuesto;
-                String estado;
-                entrada.nextLine();
-                System.out.println("Ingrese el nombre del jugador a contratar");
-                nombre = entrada.nextLine();
-                System.out.println("Ingrese el presupuesto planteado");
-                presupuesto = entrada.nextDouble();
-                entrada.nextLine();
-                System.out.println("Ingrese el nombre del estado");
-                estado = entrada.nextLine();
-                mensaje.format("%s, presupuesto %.2f, estado %s", nombre,
-                     presupuesto, estado);
-                System.out.println("Escribe si para salir del ciclo");
-                String salida = entrada.nextLine();
-                if (salida.equals("si")){
-                    bandera = true;
-                
-                }
-            
-            }
-            mensaje.close();
-       }
-    
+   public static void ejercicios(String datos) {
+        try {
+            Formatter out = new Formatter("data/Problema02");
+            out.format("%s\n", datos);
+            out.close();
+        } catch (Exception e) {
+            System.err.println("Error al crear el archivo");
+            System.exit(1);
+        }
+    }
+
 }
