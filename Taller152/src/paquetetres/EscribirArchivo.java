@@ -10,5 +10,7 @@ package paquetetres;
  * @author reroes
  */
 public class EscribirArchivo {
-    
+    public static void main(String[] args) {
+        System.out.println("Hola");
+    }
 }

@@ -5,11 +5,15 @@
  */
 package paqutedos;
 
+import java.io.FileNotFoundException;
+
 
 /**
  *
  * @author reroes
  */
 public class Principal {
-    
+    public static void main(String[] args) throws FileNotFoundException {
+      EscribirArchivo.ejercicio();
+    }
 }

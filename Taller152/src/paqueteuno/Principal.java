@@ -12,5 +12,8 @@ import paquetetres.*;
  * @author reroes
  */
 public class Principal {
+    public static void main(String[] args) {
+       EscribirArchivo.ejercicioo()  ;
+    }
     
-}
+     }
